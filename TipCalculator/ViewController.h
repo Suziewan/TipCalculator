@@ -10,9 +10,11 @@
 
 @interface ViewController : UIViewController
 
-@property (nonatomic) UITextField *billAmountTextField;
+
+
 
 - (IBAction)calculateTip:(UIBarButtonItem *)sender;
+
 
 @end
 

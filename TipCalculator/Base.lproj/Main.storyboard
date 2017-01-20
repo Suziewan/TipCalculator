@@ -22,54 +22,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3n-Me-Hmg">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3n-Me-Hmg">
                                 <rect key="frame" x="49" y="556" width="277" height="91"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Calculate Tip">
+                                    <color key="titleColor" red="0.86882691059999995" green="0.42093951730000001" blue="0.39929139559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XF7-He-9mz"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdw-5w-YxQ">
-                                <rect key="frame" x="16" y="28" width="343" height="53"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="lSb-GO-98p"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdw-5w-YxQ">
+                                <rect key="frame" x="16" y="420" width="343" height="53"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.86882691059999995" green="0.42093951730000001" blue="0.39929139559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" red="0.74371745690000002" green="1" blue="0.27287324759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tip Amount Text Field" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="J2K-bS-dkt">
-                                <rect key="frame" x="16" y="518" width="343" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter tip amount" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="J2K-bS-dkt">
+                                <rect key="frame" x="16" y="253" width="343" height="30"/>
                                 <color key="textColor" red="0.32837217200000002" green="0.047457808480000002" blue="0.61973769430000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bill Amount Text Field" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qRp-pc-qHp" customClass="BillAmountTextField">
-                                <rect key="frame" x="16" y="440" width="343" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter bill amount" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qRp-pc-qHp">
+                                <rect key="frame" x="16" y="184" width="343" height="30"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tip Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWw-Jn-I3r">
+                                <rect key="frame" x="25" y="20" width="324" height="56"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="J2K-bS-dkt" firstAttribute="leading" secondItem="qRp-pc-qHp" secondAttribute="leading" id="0wl-3p-C7h"/>
-                            <constraint firstItem="J2K-bS-dkt" firstAttribute="top" secondItem="qRp-pc-qHp" secondAttribute="bottom" constant="18" id="3On-mf-sKM"/>
-                            <constraint firstItem="J2K-bS-dkt" firstAttribute="trailing" secondItem="qRp-pc-qHp" secondAttribute="trailing" id="E2d-2c-d25"/>
-                            <constraint firstItem="J2K-bS-dkt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EyX-Qr-xxS"/>
+                            <constraint firstItem="qRp-pc-qHp" firstAttribute="centerX" secondItem="J2K-bS-dkt" secondAttribute="centerX" id="0Vt-ty-Qu8"/>
+                            <constraint firstItem="J2K-bS-dkt" firstAttribute="top" secondItem="qRp-pc-qHp" secondAttribute="bottom" constant="39" id="1l0-B8-LDb"/>
+                            <constraint firstItem="qRp-pc-qHp" firstAttribute="height" secondItem="J2K-bS-dkt" secondAttribute="height" id="7jD-Tq-Llf"/>
+                            <constraint firstItem="qRp-pc-qHp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="164" id="Aj8-jm-ThP"/>
+                            <constraint firstItem="qRp-pc-qHp" firstAttribute="centerX" secondItem="L3n-Me-Hmg" secondAttribute="centerX" id="D22-7K-Hxw"/>
+                            <constraint firstItem="zWw-Jn-I3r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="IBm-P8-Pkw"/>
                             <constraint firstItem="L3n-Me-Hmg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="33" id="OVx-5P-StH"/>
-                            <constraint firstItem="J2K-bS-dkt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Pqa-pX-n50"/>
-                            <constraint firstItem="qRp-pc-qHp" firstAttribute="height" secondItem="J2K-bS-dkt" secondAttribute="height" id="SNm-h6-7jH"/>
+                            <constraint firstItem="qRp-pc-qHp" firstAttribute="width" secondItem="J2K-bS-dkt" secondAttribute="width" id="Oda-ns-Yqi"/>
+                            <constraint firstItem="xdw-5w-YxQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Pmr-Nq-OyQ"/>
+                            <constraint firstItem="qRp-pc-qHp" firstAttribute="trailing" secondItem="xdw-5w-YxQ" secondAttribute="trailing" id="RNU-cE-JGZ"/>
+                            <constraint firstAttribute="trailing" secondItem="zWw-Jn-I3r" secondAttribute="trailing" id="Snw-wb-mfc"/>
+                            <constraint firstItem="zWw-Jn-I3r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UFI-Cu-6AJ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="L3n-Me-Hmg" secondAttribute="bottom" constant="20" id="WCr-dW-pLW"/>
-                            <constraint firstItem="J2K-bS-dkt" firstAttribute="trailing" secondItem="xdw-5w-YxQ" secondAttribute="trailing" id="bBC-y7-7qM"/>
-                            <constraint firstItem="L3n-Me-Hmg" firstAttribute="top" secondItem="J2K-bS-dkt" secondAttribute="bottom" constant="8" id="gkQ-9O-JST"/>
+                            <constraint firstItem="qRp-pc-qHp" firstAttribute="leading" secondItem="xdw-5w-YxQ" secondAttribute="leading" id="cjX-C4-uc3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="L3n-Me-Hmg" secondAttribute="trailing" constant="33" id="hTZ-7V-BpW"/>
-                            <constraint firstItem="qRp-pc-qHp" firstAttribute="width" secondItem="J2K-bS-dkt" secondAttribute="width" id="mlK-L4-8kq"/>
-                            <constraint firstItem="J2K-bS-dkt" firstAttribute="leading" secondItem="xdw-5w-YxQ" secondAttribute="leading" id="ngZ-do-kWs"/>
-                            <constraint firstItem="xdw-5w-YxQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="odn-mK-5N3"/>
-                            <constraint firstItem="J2K-bS-dkt" firstAttribute="centerX" secondItem="L3n-Me-Hmg" secondAttribute="centerX" id="ooZ-1z-kQc"/>
+                            <constraint firstItem="qRp-pc-qHp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="q0T-kW-8Oy"/>
+                            <constraint firstItem="L3n-Me-Hmg" firstAttribute="top" secondItem="xdw-5w-YxQ" secondAttribute="bottom" constant="83" id="rNF-la-x1d"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="billAmount" destination="qRp-pc-qHp" id="8x9-0g-xcI"/>
+                        <outlet property="tipAmount" destination="xdw-5w-YxQ" id="Kuv-xx-3a4"/>
+                        <outlet property="tipPercentage" destination="J2K-bS-dkt" id="l4f-Ev-Xft"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
