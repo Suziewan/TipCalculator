@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+
+
 @end
 
 @implementation ViewController
@@ -19,11 +21,11 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)calculateTip:(UIBarButtonItem *)sender {
+    
+    //figure out what a 15% tip should be
 }
+
 
 
 @end
